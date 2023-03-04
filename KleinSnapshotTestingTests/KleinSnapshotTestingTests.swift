@@ -7,24 +7,23 @@
 
 import XCTest
 import snapshottable
-@testable import KleinSnapshotTesting
 import SwiftUI
 import UIKit
+@testable import KleinSnapshotTesting
 
 final class KleinSnapshotTestingTests: XCTestCase {
-    func testExample() throws {
+    func testUIViewController() throws {
         try assertSnapshot(of: SampleViewController())
     }
 
-    func testMigirdi() throws {
+    func testUIView() throws {
         if let view = Bundle.main.loadNibNamed("SampleView", owner: self, options: nil)?.first as? SampleView {
             try assertSnapshot(of: view)
         }
     }
 
-    func testZubizu() throws {
-        try assertSnapshot(
-            of: ContentView(viewModel: .init(imageName: "circle", text: "test")).asSnapshottableView
-        )
+    func testView() throws {
+        let view = ContentView(viewModel: .init(imageName: "circle", text: "test"))
+        try assertSnapshot(of: view.asSnapshottableView)
     }
 }
