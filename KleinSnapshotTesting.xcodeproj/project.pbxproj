@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E1E3E8529B3BDFB00A740A7 /* snapshottable in Frameworks */ = {isa = PBXBuildFile; productRef = 3E1E3E8429B3BDFB00A740A7 /* snapshottable */; };
 		3E3E9AE829AD4B8B00921335 /* KleinSnapshotTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E9AE729AD4B8B00921335 /* KleinSnapshotTestingApp.swift */; };
 		3E3E9AEA29AD4B8B00921335 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E9AE929AD4B8B00921335 /* ContentView.swift */; };
 		3E3E9AEC29AD4B8D00921335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3E9AEB29AD4B8D00921335 /* Assets.xcassets */; };
 		3E3E9AEF29AD4B8D00921335 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E3E9AEE29AD4B8D00921335 /* Preview Assets.xcassets */; };
 		3E3E9AF929AD4B8D00921335 /* KleinSnapshotTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3E9AF829AD4B8D00921335 /* KleinSnapshotTestingTests.swift */; };
+		3E6C732F29D0F01600A787F9 /* snapshotino in Frameworks */ = {isa = PBXBuildFile; productRef = 3E6C732E29D0F01600A787F9 /* snapshotino */; };
 		3EAECE6F29AFF76200D226C0 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAECE6E29AFF76200D226C0 /* SampleView.swift */; };
 		3EAECE7129AFF76B00D226C0 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EAECE7029AFF76B00D226C0 /* SampleView.xib */; };
 		3ECF642B29AE956E00CA27AD /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF642929AE956E00CA27AD /* SampleViewController.swift */; };
@@ -30,7 +30,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E1E3E8329B3BD7800A740A7 /* snapshottable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = snapshottable; path = ../snapshottable; sourceTree = "<group>"; };
 		3E3E9AE429AD4B8B00921335 /* KleinSnapshotTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KleinSnapshotTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E3E9AE729AD4B8B00921335 /* KleinSnapshotTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KleinSnapshotTestingApp.swift; sourceTree = "<group>"; };
 		3E3E9AE929AD4B8B00921335 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E1E3E8529B3BDFB00A740A7 /* snapshottable in Frameworks */,
+				3E6C732F29D0F01600A787F9 /* snapshotino in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +65,6 @@
 		3E1E3E7D29B3BC4700A740A7 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				3E1E3E8329B3BD7800A740A7 /* snapshottable */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -169,6 +167,8 @@
 			dependencies = (
 			);
 			name = KleinSnapshotTesting;
+			packageProductDependencies = (
+			);
 			productName = KleinSnapshotTesting;
 			productReference = 3E3E9AE429AD4B8B00921335 /* KleinSnapshotTesting.app */;
 			productType = "com.apple.product-type.application";
@@ -188,7 +188,7 @@
 			);
 			name = KleinSnapshotTestingTests;
 			packageProductDependencies = (
-				3E1E3E8429B3BDFB00A740A7 /* snapshottable */,
+				3E6C732E29D0F01600A787F9 /* snapshotino */,
 			);
 			productName = KleinSnapshotTestingTests;
 			productReference = 3E3E9AF429AD4B8D00921335 /* KleinSnapshotTestingTests.xctest */;
@@ -222,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 3E3E9ADB29AD4B8B00921335;
+			packageReferences = (
+				3E6C732D29D0F01600A787F9 /* XCRemoteSwiftPackageReference "snapshotino" */,
+			);
 			productRefGroup = 3E3E9AE529AD4B8B00921335 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -530,10 +533,22 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3E6C732D29D0F01600A787F9 /* XCRemoteSwiftPackageReference "snapshotino" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:kublaios/snapshotino.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		3E1E3E8429B3BDFB00A740A7 /* snapshottable */ = {
+		3E6C732E29D0F01600A787F9 /* snapshotino */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = snapshottable;
+			package = 3E6C732D29D0F01600A787F9 /* XCRemoteSwiftPackageReference "snapshotino" */;
+			productName = snapshotino;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

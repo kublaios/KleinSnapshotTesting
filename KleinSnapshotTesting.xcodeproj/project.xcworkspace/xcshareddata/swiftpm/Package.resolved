@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "snapshotino",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:kublaios/snapshotino.git",
+      "state" : {
+        "branch" : "dev/fix-snapshot-names",
+        "revision" : "116096cef14db99bcf970c6e35a2e6002fa521fb"
+      }
+    }
+  ],
+  "version" : 2
+}

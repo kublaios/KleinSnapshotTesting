@@ -6,7 +6,7 @@
 //
 
 import XCTest
-import snapshottable
+import snapshotino
 import SwiftUI
 import UIKit
 @testable import KleinSnapshotTesting
